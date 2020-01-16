@@ -1,6 +1,6 @@
 <div class="listItem" *ngFor="let todo of (todos$ | async)">
 	<div>
-		<input type="checkbox" [checked]="todo.isCompleted" (click)="perform(todo.id)">
+		<mat-checkbox (click)="perform(todo.id)"></mat-checkbox>
 	</div>
 	
 	<div *ngIf="(todo.isCompleted) else incomplete" class="todoItemComplete">
@@ -14,5 +14,5 @@
 		</div>
 	</ng-template>
 
-	<button (click)="delete(todo.id)" class="delete">X</button>
+	<button mat-mini-fab (click)="delete(todo.id)" class="delete">X</button>
 </div>
