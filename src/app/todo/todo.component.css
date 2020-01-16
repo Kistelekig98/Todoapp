@@ -1,0 +1,40 @@
+.listItem {
+  padding: 1em;
+  margin-top: 0.5em;
+  width: 90%;
+  float: left;
+  list-style-type: none;
+  font-weight: lighter;
+  border: 1px solid lightgray;
+}
+.listItem:last-child {
+  margin-bottom: 2em;
+}
+.listItem div {
+  float: left;
+  margin-right: 1em;
+}
+
+input {
+  font: inherit;
+  border: none;
+}
+input::placeholder {
+  color: black;
+}
+.todoItemComplete {
+  color: gray;
+  text-decoration: line-through;
+}
+input.todoItemComplete::placeholder {
+  color: gray;
+  text-decoration: line-through;
+}
+
+button {
+  font: inherit;
+  background: none;
+  border: none;
+  color: crimson;
+  cursor: pointer;
+}

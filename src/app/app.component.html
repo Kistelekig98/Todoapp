@@ -1,0 +1,14 @@
+<div class="container">
+  <div>
+    <h1>{{title}}</h1>
+  </div>
+
+  <div>
+    <input #text (keyup.enter)="add(text.value)" class="todoInput" type="text">
+    <button (click)="add(text.value)" id="addButton">Hozzáad</button>
+  </div>
+  
+  <div class="todoList">
+    <app-todo></app-todo>
+  </div>
+</div>
